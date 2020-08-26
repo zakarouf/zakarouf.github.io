@@ -1,0 +1,152 @@
+/* || General setup */
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+  background-color: #2a363b;
+}
+
+body {
+  display: flex;
+  flex-direction:column;
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* || typography */
+
+h1, h2, h3 {
+  font-family: 'Barlow';
+  color: #2a2a2a;
+}
+
+p, input, li {
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 10px black;
+}
+
+h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2.2rem;
+}
+
+p, li {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+/* || header layout */
+
+nav, article, aside, footer {
+  background-color: #2a363b;
+  padding: 1%;
+}
+
+nav {
+  height: 50px;
+  background-color: #99b898;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  padding: 0;
+  list-style-type: none;
+  flex: 2;
+  display: flex;
+}
+
+nav li {
+  display: inline;
+  text-align: center;
+  flex: 1;
+}
+
+nav a {
+  display: inline-block;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+
+nav form {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 2em;
+}
+
+input {
+  font-size: 1.6rem;
+  height: 32px;
+}
+
+input[type="search"] {
+  flex: 3;
+}
+
+input[type="submit"] {
+  flex: 1;
+  margin-left: 1rem;
+  background: #333;
+  border: 0;
+  color: white;
+}
+
+/* || main layout */
+
+main {
+  display: flex;
+  padding-left: 10px;
+  background: #2a363b;
+  outline-style: dashed;
+  outline-color: #202c31;
+}
+
+article {
+  flex: 4;
+}
+
+aside {
+  margin-left: 370px;
+  background-color: #ff847c;
+  outline-style: dashed;
+  outline-color: #202c31;
+}
+
+aside ul {
+  list-style-type: none;
+}
+
+aside li {
+  padding-bottom: 10px;
+}
+
+footer {
+  clear: both;
+  margin-top:10px;
+  position: absolute;
+  bottom: 0;
+  width: 70%;
+  background-color: #e84a5f;
+}
+footer a {
+  color: #e0e0e0;
+}

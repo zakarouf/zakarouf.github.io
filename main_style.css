@@ -54,31 +54,29 @@ p, li {
 
 
 /* || create bubble border */
-nav, aside, main, footer {
+nav, aside, main, footer, nav a:hover {
 
   -moz-border-radius:0 0 10px 10px;
   -webkit-border-radius: 0 0 10px 10px;
   border-radius:10px 10px 10px 10px;
 
 }
-        
 
-
-nav, article, aside, footer {
+article {
   background-color: #2a363b;
   padding: 1%;
 }
 
 nav {
 
-  margin-top: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   border:5px solid #99b898;
-  
 
   height: 50px;
   background-color: #99b898;
   display: flex;
-  margin-bottom: 10px;
+
 }
 
 nav ul {
@@ -94,12 +92,21 @@ nav li {
   flex: 1;
 }
 
+nav li:not(:last-child) { 
+  border-right:solid 1px #9de0ad; /* This will not give border to last li element */
+}
+
 nav a {
   display: inline-block;
-  font-size: 2rem;
+  font-size: 2.2rem;
   text-transform: uppercase;
   text-decoration: none;
-  color: black;
+  color: #111;
+}
+
+nav a:hover {
+
+  background-color: #9de0ad;
 }
 
 nav form {
@@ -171,6 +178,7 @@ footer {
   border:5px solid #e84a5f;
 
 }
+
 footer a {
   color: #e0e0e0;
 }

@@ -13,7 +13,7 @@ html {
 body {
   display: flex;
   flex-direction:column;
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -54,7 +54,7 @@ p, li {
 
 
 /* || create bubble border */
-nav, aside, main, footer, nav a:hover {
+nav, aside, main, footer, section, nav a:hover {
 
   -moz-border-radius:0 0 10px 10px;
   -webkit-border-radius: 0 0 10px 10px;
@@ -137,11 +137,16 @@ input[type="submit"] {
 /* || main layout */
 
 main {
+  margin-left: -1%;
   display: flex;
-  padding-left: 10px;
+  position: relative;
+  
+}
+
+section{
   background: #202c31;
   border:5px solid #202c31;
-  
+  width: 78%;
 }
 
 article {
@@ -149,10 +154,13 @@ article {
 }
 
 aside {
-  margin-left: 350px;
+  position: absolute;
+  margin: 0 1.5%;
   background-color: #ff847c;
-
+  float: right;
+  width: 20%;
   border:5px solid #ff847c;
+
 }
 
 aside ul {
@@ -169,12 +177,9 @@ footer {
   margin-bottom: 10px;
   position: absolute;
   bottom: 0;
-  width: 70%;
+  width: 80%;
   background-color: #e84a5f;
 
-  -moz-border-radius:0 0 10px 10px;
-  -webkit-border-radius: 0 0 10px 10px;
-  border-radius:10px 10px 10px 10px;
   border:5px solid #e84a5f;
 
 }

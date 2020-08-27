@@ -52,12 +52,29 @@ p, li {
 
 /* || header layout */
 
+
+/* || create bubble border */
+nav, aside, main, footer {
+
+  -moz-border-radius:0 0 10px 10px;
+  -webkit-border-radius: 0 0 10px 10px;
+  border-radius:10px 10px 10px 10px;
+
+}
+        
+
+
 nav, article, aside, footer {
   background-color: #2a363b;
   padding: 1%;
 }
 
 nav {
+
+  margin-top: 5px;
+  border:5px solid #99b898;
+  
+
   height: 50px;
   background-color: #99b898;
   display: flex;
@@ -115,9 +132,9 @@ input[type="submit"] {
 main {
   display: flex;
   padding-left: 10px;
-  background: #2a363b;
-  outline-style: dashed;
-  outline-color: #202c31;
+  background: #202c31;
+  border:5px solid #202c31;
+  
 }
 
 article {
@@ -125,10 +142,10 @@ article {
 }
 
 aside {
-  margin-left: 370px;
+  margin-left: 350px;
   background-color: #ff847c;
-  outline-style: dashed;
-  outline-color: #202c31;
+
+  border:5px solid #ff847c;
 }
 
 aside ul {
@@ -141,11 +158,18 @@ aside li {
 
 footer {
   clear: both;
-  margin-top:10px;
+  margin-top:5px;
+  margin-bottom: 10px;
   position: absolute;
   bottom: 0;
   width: 70%;
   background-color: #e84a5f;
+
+  -moz-border-radius:0 0 10px 10px;
+  -webkit-border-radius: 0 0 10px 10px;
+  border-radius:10px 10px 10px 10px;
+  border:5px solid #e84a5f;
+
 }
 footer a {
   color: #e0e0e0;

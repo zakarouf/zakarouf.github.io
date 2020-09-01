@@ -8,6 +8,9 @@ html, body {
 html {
   font-size: 10px;
   background-color: #2a363b;
+  background-image: url(thispage/bg_img_1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 body {
@@ -54,7 +57,7 @@ p, li {
 
 
 /* || create bubble border */
-nav, aside, main, footer, section, nav a:hover {
+nav, aside, main, footer, section, article, nav a:hover {
 
   -moz-border-radius:0 0 10px 10px;
   -webkit-border-radius: 0 0 10px 10px;
@@ -144,18 +147,20 @@ main {
 }
 
 section{
-  background: #202c31;
-  border:5px solid #202c31;
   width: 78%;
 }
 
 article {
+  border:5px solid #2a363b;
+  background: #2a363b;
+  margin-top: 1%;
+  padding: 1%;
   flex: 4;
 }
 
 aside {
   position: absolute;
-  margin: 0 1.5%;
+  margin: 3% 1.5%;
   background-color: #ff847c;
   float: right;
   width: 20%;

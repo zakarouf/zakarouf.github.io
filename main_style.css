@@ -159,7 +159,7 @@ article {
 }
 
 aside {
-  position: absolute;
+  position: relative;
   margin: 3% 1%;
   background-color: #ff847c;
   float: right;

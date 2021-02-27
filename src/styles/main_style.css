@@ -160,7 +160,11 @@ article {
 
 aside {
   position: relative;
+<<<<<<< HEAD:src/styles/main_style.css
   margin: 1% 1%;
+=======
+  margin: 3% 1%;
+>>>>>>> 6ffd433541c22043da75eb51a16fc59e8ea26a22:main_style.css
   background-color: #ff847c;
   float: right;
   width: 20%;
